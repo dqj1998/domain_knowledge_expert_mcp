@@ -1,0 +1,15 @@
+mcp[cli]
+python-dotenv
+openai
+fastmcp
+requests
+langchain
+langchain_community
+faiss-cpu
+bs4
+logging
+transformers
+sentence-transformers
+sentence_transformers
+torch
+debugpy

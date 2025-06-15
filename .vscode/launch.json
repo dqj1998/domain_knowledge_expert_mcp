@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug MCP Server",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/server.py", // Or the path to your main script
+            "console": "integratedTerminal",
+            "python": "/Users/dqj/HDD/GitHubProjects/myenv-github/bin/python",
+            "env": {
+                "DEBUG": "*"  // Enable debug logging if needed
+            },
+            "args": ["sse"], // Add any command line arguments your script needs
+            "justMyCode": true // Set to false to step into library code
+        },
+        {
+            "name": "Attach to MCP Server",
+            "type": "debugpy",
+            "mode": "remote",
+            "request": "attach",
+            "port": 5678,
+            "host": "localhost",
+            "justMyCode": false
+        }
+
+    ]
+}
